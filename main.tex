@@ -1,0 +1,378 @@
+%%
+%% This is file `sample-sigplan.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `sigplan')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-sigplan.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%%
+%% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[sigconf,nonacm]{acmart}
+\usepackage{enumerate}
+%% NOTE that a single column version is required for 
+%% submission and peer review. This can be done by changing
+%% the \doucmentclass[...]{acmart} in this template to 
+%% \documentclass[manuscript,screen,review]{acmart}
+%% 
+%% To ensure 100% compatibility, please check the white list of
+%% approved LaTeX packages to be used with the Master Article Template at
+%% https://www.acm.org/publications/taps/whitelist-of-latex-packages 
+%% before creating your document. The white list page provides 
+%% information on how to submit additional LaTeX packages for 
+%% review and adoption.
+%% Fonts used in the template cannot be substituted; margin 
+%% adjustments are not allowed.
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+%\setcopyright{acmcopyright}
+%\copyrightyear{2018}
+%\acmYear{2018}
+%\acmDOI{XXXXXXX.XXXXXXX}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+%\acmConference[Conference acronym 'XX]{Make sure to enter the correct
+%  conference title from your rights confirmation emai}{June 03--05,
+%  2018}{Woodstock, NY}
+%
+%  Uncomment \acmBooktitle if th title of the proceedings is different
+%  from ``Proceedings of ...''!
+%
+%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
+%  June 03--05, 2018, Woodstock, NY} 
+%\acmPrice{15.00}
+%\acmISBN{978-1-4503-XXXX-X/18/06}
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+\usepackage{float}
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=Green, urlcolor=Green}
+\hypersetup{colorlinks,citecolor=Green,filecolor=black,linkcolor=Green,urlcolor=Green}
+%%
+%% end of the preamble, start of the body of the document source.
+\setcopyright{none}
+
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{A Survey on Privacy-Preserving Models for Targeted Advertising}
+%\subtitle{Paper Proposal}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+
+\author{Tanmayi Jandhyala}
+\affiliation{%
+  \institution{Master of Engineering}
+  \institution{Department of Electrical and Computer Engineering} 
+  \institution{University of Waterloo}
+  %\city{Hekla}
+  %\country{Iceland}}
+  }
+   \email{tjandhya@uwaterloo.ca}
+
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+%\renewcommand{\shortauthors}{Trovato and Tobin, et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+%\begin{abstract}
+%  A clear and well-documented \LaTeX\ document is presented as an
+%  article formatted for publication by ACM in a conference proceedings
+%  or journal publication. Based on the ``acmart'' %document class, this
+%  article presents and explains many of the common variations, as well
+%  as many of the formatting elements an author may use in the
+%  preparation of the documentation of their work.
+%\end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010520.10010553.10010562</concept_id>
+  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010575.10010755</concept_id>
+  <concept_desc>Computer systems organization~Redundancy</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010553.10010554</concept_id>
+  <concept_desc>Computer systems organization~Robotics</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10003033.10003083.10003095</concept_id>
+  <concept_desc>Networks~Network reliability</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+</ccs2012>
+\end{CCSXML}
+
+%\ccsdesc[500]{Computer systems organization~Embedded systems}
+%\ccsdesc[300]{Computer systems organization~Redundancy}
+%\ccsdesc{Computer systems organization~Robotics}
+%\ccsdesc[100]{Networks~Network reliability}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+%\keywords{datasets, neural networks, gaze detection, text tagging}
+
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+%% page.
+%\begin{teaserfigure}
+%  \includegraphics[width=\textwidth]{sampleteaser}
+%  \caption{Seattle Mariners at Spring Training, 2010.}
+%  \Description{Enjoying the baseball game from the third-base
+%  seats. Ichiro Suzuki preparing to bat.}
+%  \label{fig:teaser}
+%\end{teaserfigure}
+
+%\received{20 February 2007}
+%\received[revised]{12 March 2009}
+%\received[accepted]{5 June 2009}
+\settopmatter{printacmref=false}
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\begin{abstract}
+    User activity on the internet is of crucial importance for the economic benefit of prevalent business models. Users are not just the actors that generate data that runs these models, but also the target audience for receiving tailored advertisements by interacting with the Web. In playing such a dual role, the responsibility of their data privacy shifts to engineers designing these targeted advertising models, and to regulatory bodies to ensure consumer data is protected. 
+    Privacy-preserving models for such tracking mechanisms essentially decide the inclusiveness and anonymisation of parts of the data that can help preserve privacy. This survey researches some of these models to gain context on what aspects of targeted advertising are being remodelled to achieve privacy-preservation, and to what extent do they give control to the user. The papers surveyed would help understand specific user profiling in various classified models, what privacy attacks can they circumvent, and how much control do users have in the process. It also aims to include important social aspects like bias of any form that a particular mode of targeting has the potential to show, and conflict in providing consent by studying user experience on these ads.
+\end{abstract}
+\maketitle
+\pagestyle{plain}
+\section{Introduction}
+E-commerce websites use data modeled as part of user activity to generate information streams, which are then fed into filtering systems. These filtering systems remove unwanted and redundant data to be provided to recommender systems \cite{One}, which present the user with relevant information items that they could be interested in. While that is what enables targeted advertising, from a privacy standpoint, prioritizing user’s control over their information could be a challenge if accuracy and quality of a filtering mechanism are to be maintained. For this survey, privacy-preserving targeted advertisements are categorized based on various techniques that platforms utilize to collect user data.
+
+The idea is to classify previously-proposed targeted ad models in a high-level perspective based on how much control users have on data that correlates to device attributes, which analytics companies use to perform user profiling. Further, users are assigned categorisations that can lead disruption of their privacy in the ad delivery process \cite{Korolova}. While users want to see relevant ads, a significant number of them who perceive such ads as being a result of /emph{inferencing} from their behavioral activity or geographic location on the web, find targeted ads to be invasive and “creepy” \cite{One}. This survey aims to classify targeted advertising models in the following categories and presents ideas from work done in them. Further, it tries to establish common points to present observations for online advertising parties to consider.
+
+\section{Classification}
+Targeted advertising on the internet, as part of this survey, is classified in a high-level format into the below categories.
+\begin{enumerate}
+
+    \item \textbf{Online Behavior-based targeting:} 
+    These models require continuous sampling and pose greater privacy threats \cite{10.1007/978-3-642-31680-7_1}, because an attacker obtaining information from targeted ads that are generated by user-behavior can reveal significant personal information. \cite{Adnostic}
+
+     \item \textbf{Geolocation-based targeting:} 
+    As presented in and, Location-based targeted ads are the most concerning for users as mobile devices build their services on obtaining feedback from user interaction with their device. The paper would study how privacy-preserving advertising models filter the data to send ads based on a particular geographic location. 
+
+    \item \textbf{Using data from intermediaries for targeting:}
+    The content generated by users on social media platforms and services that do not have concrete privacy policies and third-party regulation can render sensitive user information to be revealed. Further, surveillance intermediaries have the power to not just access sensitive data but also restrict user access from services \cite{FBPII}
+\end{enumerate}
+There are other means of obtaining data that can be filtered for relevant information on defining advertising demographic, such as solely contextual advertising that uses context-based mapping to place related products in the same advertisement pool which the user would most likely click on. But from a user privacy standpoint, user perception on behavior and location tracking obfuscates their willingness for their data to be shared \cite{userperception}. The paper consists of a classification on the threat models that the papers' systems used in general, and a literature review of each paper surveyed for each classification. Inferences from common points and future work is also discussed.
+
+\section{Adversary Models}
+The adversary models are user-focused in the sense that potential threats to the system are factors that cause privacy-negligence in targeted advertising. They are enumerated below in relation with the advertising model that they are associated with. 
+
+\begin{enumerate}[A.]
+ \item The adversary runs an e-commerce website or a web app that tracks sessional cookies, and obtained information like the device IP address of the user. The adversary could also post queries to the user as a form of obtaining personalized information, such as payment information and location, along with information about viewed products. It is assumed that any user can sign up for an account on the website if prompted, which further would require the user to provide information about their age, email address, and zip code. It is also assumed that the users are regularly on the platform, generating activity.
+ \item The adversary has access to the device attributes of the user, which includes their location information, their mobile phone IP address, and even the grid cell that their GPS points to. It is assumed that the semi-honest model works by obtaining other PII attributes, and that sometimes, the location details might even be unavailable. 
+ \item The adversary runs a social media website, and has relevant tracking pixel code in it that informs it of a user’s presence on their website. The adversary has the ability to group users into custom audiences, based on personally-identifiable attributes that can form a bias. It is also assumed that the adversary has basic PII of the user such as their Name and E-mail address that the user provides while signing up to the platform, and that the user uses the platform actively. It is also important to assume here that the websites run by the adversary can be regulated by governments who wish to keep track of user-identifying data.
+\end{enumerate}
+
+\section{Literature Review}
+\subsection{Background}
+ Typically, the agents playing roles in the targeted advertising infrastructure are the advertiser, the ad-network, the publisher, and the client \cite{oblivad}. The advertiser wishes to market their product to relevant users (clients) and an ad-network (essentially, a broker) facilitates that. 
+Advertising networks make use of bids, which can include clicks, impressions, conversions, views, or engagements, depending on the advertising campaign type. Payment for the ad happens only when a client acts on a bid either by clicking on the ad, or performing any other form of engagement with the ad. Targeted ads also make use of ad inferences where inferences of user activity are drawn based on that of other users that are also on the platform. Paper \cite{whattwitterknows} points out that this would mean that bias in the input group could bring bias to the inferenced output group as well. 
+
+\subsection{Online Behaviour-based Advertising}
+Real-time bidding (RTB) mechanism in Online Behavorial advertising (OBA) is the buying and selling of ads. Ad-networks provide marketplaces for advertising spaces to be auctioned. The ad impressions begin bidding for an advertising space when a user visits a web page, when the publisher offers these bids for one or more ad exchanges. Advertisers then place their bids immediately. In this context,
+\begin{itemize}
+    \item Demand-Side Platforms (DSPs) programmatically gather ad impressions from multiple inventories in real-time and bid on them on behalf of the advertisers. 
+    \item Supply-Side Platforms (SSPs) offer advertising space to multiple inventories and reach out to a large number of advertisers about this. 
+\end{itemize}
+The ad-network plays the role of mapping each ad-request from an advertiser into a bid-request message, which is forwarded over to several DSPs. A DSP then matches the properties of the ad-request with the record requests of its campaigns. It then sends a response, including the billing of the bid and the winning DSP would then be responsible for the delivery of the ad-impression to the user. 
+
+The online advertising industry requires the involvement of a large number of parties, each having roles that place them at accountability for maintaining user privacy. Advertisers make use of social media to leverage information from user activity, for example, the number of posts a user creates \cite{whattwitterknows}, their clicks on products advertised by business pages, and information from advertisers such as PII-indexed lists. To deliver targeted ads, advertisers can select recipients of ads based on targeting types, based on information relating to user demography. In the paper \cite{whattwitterknows}, it was also found that participants were categorised based on keywords, which often were discriminatory or categorised based on politically-driven categorisations, such as  “DLX Nissan\_African\_Americans”, “Christian\_Audience\_to\_Exclude”, “Rising Hispanics / Email Openers”, and more. Lack of transparency is thus seen in targeted advertising, and gives motivation to also ponder on the value of transparency. Further, data relating to these political aspects could be labeled ‘highly sensitive personalised information’ as per the GDPR regulation.
+
+User perception of behavioral advertising depends on the factors of ad expectations, which is the type of ad content they wish to see (personalised or otherwise), and ad explanations that help users using online media platforms get information on how targeted ads work. Increasing user data aggregation through web tracking on commercial websites has observed that even ad blockers would still allow for advertisers to track some user activity \cite{webneverforgets}.
+
+Advertising models themselves are divided into Pay-per-view and Pay-per-click, both of them influencing the means by which the actors involved in the delivery of the ad gets paid. Online Behavioral Advertising classifies the advertising process into two phases \cite{oblivad}:
+\begin{itemize}
+    \item The distribution phase: This is where the ad-network obtains ad information from the advertisers and distributes them.
+    \item Tallying phase: Where the ad-network company computes the billing for the ad based on user clicks or views. 
+\end{itemize}
+User tracker is carried out by the ad-network through the use of embedded links placed in the web pages that are meant for the user to access. When a user visits the page, the broker obtains information from the user’s browser that can contain PII \cite{oblivad}, making it a privacy risk resulting from web tracking. 
+
+The following significant privacy-preserving solutions have been proposed for online behavioral tracking:
+
+Helsloot et al \cite{ahead} proposed a method in which user privacy is preserved in an advertising model which is generated using machine learning in encrypted data in OBA tasks. This model assumes threat model A, and that personalised information is present only in the DSP area, and any kind of privacy-preserving operations are to be performed at this stage. They introduced the PSP, which is a service provider that does not collude with any existing party, and assists in performing computations in a privacy-preserving manner. This works by having the ad-networks, the DSPs and PSP not trust user data, or the ads that were engaged with. Prior to the distribution phase, they would predict the click probability using a logistic regression model, based on a d-dimensional predictor vector. Then, based on the actual clock, the loss is generated by a gradient descent which then updates the model at the end of the bidding (tallying) phase. A key-pair for a two-party scheme is then generated, the private shared with the PSP and each DSP along with the ad-network. The PSP holds encrypted information of the bid value, which it sends to the ad-network. The highest encrypted bid gets picked and forwarded to the user, who decrypts and displays the advertisement.
+ Future work: During auctioning, there is no explanation on how the advertising spaces are bid for which user, and if they address issues with bias. Neither is the user perception of it provided to draw conclusions. 
+
+
+Backes et al \cite{oblivad} proposes an OBA architecture where the privacy of user profiles is maintained while enabling monetary benefit for online business models. They make use of Private Information Retrieval (PIR) and high latency mixing of electronic tokens for billing advertisers without disclosing client information to ad-networks or brokers. This model assumes threat model A. A cryptographic coprocessor is used to store information in a secure format. While fetching an ad, the user sends their encrypted information to a secure coprocessor. The ad-network specifies an algorithm that selects the best-fitting advertisement for the user profile. Their model aims to achieve profile privacy and profile unlinkability of the user from the ad-network of brokers. 
+
+Toubiana et al \cite{Adnostic} proposes a browser-extension-based model to determine user interests based on the browser web pages that users visit. It requires the ad-network to modify its ad-serving mechanism for preserving privacy. It uses threat models A and C. It uses the data from browser history to obtain information on user activity. To do this while privacy is preserved, the researchers used NLP to assign categories to the type of content being visited on the web from the history. Each viewed page is classified using an NLP heuristics running in the browser. The browser also downloads a list of URLs and their classification information from the ad-network. When a user visits a web page, the ad publisher sends back a page that directs to the ad-network. This content in the ad-network is verified for the presence of the adnostic browser extension, and if not, an ad is published on the publisher’s page. The relevance of the ad depends on the browser history of the user and the number of ads are greater if the targeting is more precise. For this model, however, fraudulent clicks with active content could render the ad-network to obtain information about the user by waiting for a click-response, which would then show the user interests to the ad-network. Other social engineering attacks that enable malicious clicks can also occur with implementing this model.
+
+
+\subsection{Geolocation-based targeting}
+
+When contextual information is not directly available to advertisers, they can utilise broader attributes to obtain user data to extract information. Geolocation can be used in online targeted advertising when advertising campaigns are required to perform more specific ad targeting campaigns \cite{ipgeolocation}. For example, a tourist is recommended nearby local hotels for an affordable price on a particular day. User profiling is usually carried out based on data from GeoIP databases. Any host on the internet can be reached with their IP address, and it is also information that is available without needing approval of the end-user for access. Autonomous systems relating to IP addresses are divided into IP prefixes, which are then mapped into a geographical grid of “access points”, which is the best estimation of the location of each prefix \cite{ipgeolocation}.
+
+In online advertising, ad spaces are distributed by ad-networks or ad-exhanges, and the usual procedure of bidding and tallying takes place. DSPs, which receive offers of available ad spaces from publishers(advertisers), contain location information that is obtained from the bidding requests, typically from three sources:
+\begin{enumerate}[a.]
+    \item From the User, who provides data in their ad request,
+    \item GPS/Location services, which is expected to be derived from the positioning device of the user. This could also be a mobile device which would then increase expectation that it is most accurate. 
+    \item IP address, which ad-networks that want to map the advertisements with ad requests based on geolocation of the target user must include. 
+\end{enumerate}
+
+ For mobile users, location-based tracking assumes more privacy concerns. 
+ 
+ The following significant privacy-preserving solutions have been proposed for geo-location-based user tracking:
+ 
+ Troja et al \cite{location} proposes a privacy-preserving model for performing location-based targeted advertising, where the user sends a single query consisting of encrypted vectors to the ad-network, consisting of location information. This model assumes threat model B. The encrypted vector contains encryptions of 0, but for the location which is of encryption 1. Each geo-identified grid cell stores the ads generated for that location, stored in the form of an encrypted buffer of ciphertexts, which users’ GPS location can map to to establish the location of the mobile device. The ad-network performs a filtering on the stream (another secure computation protocol) of ads that are being targeted to a particular location (specific to the user). The client then decrypts the ad with their private key. The billing is carried out based on the number of times an ad is displayed to the user. The client’s input consists of a binary query vector, and the output contains a number of ads matching a location. This addresses threat model <mention> and is applicable to semi-honest adversaries. 
+ 
+Hu et al \cite{miningforads} The paper uses incremental data mining models for privacy preservation of user location and travel behaviour. These are Association Rule Mining, which discovers frequent patterns from large datasets, and Sequential Data Mining, which discovers frequent sequences. It also makes uses of spatial cloaking of the user’s true location and of dummy location paths to deter pinpointing a narrow location of the user to implement privacy-preservation. This model assumes threat model B and could include aspects from model A if the data is being used for e-commerce mobile apps. The advertising mechanism is divided into server-side and client-side, and makes use of path matrices to store sequences of locations both real and dummy, and sends the information to the advertising database. A path selection or prediction algorithm then selects a path from the database, matches them to the current path, and superimposes the result matrices after matching. This results in a weighted tree with encoded information that is treated as the predicted path, which are used for location-aware association or sequential mining. Thus, more relevant ads are sent based on a set of locations which is the user path. The proposed idea does not collude with threat model <user perception is unverified>
+
+Pang et al \cite{pola} proposed in this model, the involvement of a publisher is limited only to providing the advertisers with information of available ad spaces. This assumes threat model B. No user interaction happens with the publisher as such, and so user privacy is said to be maintained, hence maintaining transparency through the removal of a trusted third party. The model assumes all users to be mobile users. In the initialisation of the ad, the user and ad network will establish the required parameters. With the use of least significant bits, and 3D matrices, the encrypted ad request is mapped by the ad-network to the advertiser based on the current location of the mobile user that are mapped with the advertiser matrix M. This model is mathematically proven to provide user privacy by having the advertiser and ad-exchange not obtain details about the client’s location in the open to provide them with ads. The assumption made here is that the advertisers and the ad-exchange do not collude with each other. However, when query values from different advertisers are compared, location information can still be obtained.  
+
+\subsection{Targeted advertising through data obtained from intermediaries}
+
+The call is coming from inside the house! Ad-networks or ad-exchanges provide an interface between the user and the advertiser. There is obviously a lot of scope in the ad-networks gaining access to personal information of the user during the process of advertising. The biggest and most popular ad-networks that users find hard to trust are Facebook and Google, which also are the platforms that most online businesses base their business models on.
+
+Historically, widely-used intermediaries utilised targeting attributes to reach relevant audiences. Any breaches into the intermediary platforms results in a large number of users being affected, and have their private information stolen or be victim to bias, identity theft, and other forms of fraud \cite{discriminationoptimisation}. Companies that act as ad brokers, such as Facebook and Google, even went as far as creating custom audiences, which is a linking mechanism, where PII of users with similar demographic information is utilized to group them together and run targeted ads on. These users could be obtained from data that is posted by businesses using these intermediaries who wish to sell their product to a particular audience . Two factors that intermediaries can use to track user information could be as the follows:
+
+\begin{enumerate}[a.]
+    \item The size statistics of the targeted user groups that the ad interfaces reveal to advertisers,
+    \item Redundant PII that points to the same user that can be exploited to pin-point the identity of a small group of individuals. 
+\end{enumerate}
+
+A helpful approach to handling this would be that the size statistics could be obfuscated, and \cite{privrisks} does just that by rounding. Further, integrity could be achieved by performing secure de-duplication of user PII to ensure that advertisers cannot trace back to users. 
+
+This threat model follows an bid-auction mechanism of selling and displaying ads as well. 
+
+Vekatadri et al \cite{privrisks}, in the paper identifies two factors that are considered as relevant parameters to build a privacy-preserving model. It assumes threat model C. They label a group of audience as user tracking pixels, which are users who have run a javascript code by interacting with the intermediary and the latter identifies and lists them in their audiences group. PII generated from such a group is taken into consideration, along with that of audiences obtained by uploading records. The second is the size of such groups. The audience groups are then combined together and their collective size is computed. They bank on the idea of having a PII type consisting of certain parameters, like {(Name),(Age)}, to not have a PII type that consisting solely of these individual parameters themselves - like {(Name)}. The PII types are then ordered in a priority-basis in a static list. Advertisers can then release a list of custom audiences along with the number of values their PII type should hold. The intermediary or ad-network then produces this list of audience groups in a “reduced records” format, maps them with the smallest set of PII attributes they require, and discards all other attributes in the record.This set is now a set of de-duplicated custom audience.
+
+The intermediary platform then matches each of the reduced record in the above obtained set and creates a size estimate with the custom audience. If the attributes for a record match one account, the number of attributes is increased by 1, accommodating the same user more than once in more than one record. This ensures that the adversaries cannot pinpoint to one single user for targeting, while maintaining minimum required PII attributes.
+
+A limitation of this model is that when different users of the intermediary download information of each other, which this model assumes they do not have access to, collection of user data becomes more complicated. Moreover, predictions about user attributes that can inadvertently include cultural and political bias can still not be prevented. Further, user identities can be linked based on external data, for example when a user has multiple accounts over several platforms which have the same ad-network web running (viz. Facebook and Instagram) \cite{facebookandgoogle}.
+
+Cabañas et al \cite{justfacebook} in the paper, talks about Facebook’s Ad Manager obtaining user information to run its business model. It assumes the threat model C, and also B if the user is using the Facebook mobile app. The FB ads manager provides advertisers with a plethora of information about a user’s interests, such as location, demographic information, user’s web browser information such as cookies, and their interests based on previous activity. The last parameter, which is interests, gets most of its information from user activity on the social networking platform which includes the kind of posts a user engages with, and the kind of pages and people the user follows. This data is organised in a hierarchical structure with several levels. Further, information is obtained from ad preferences that Facebook allows its users to set themselves, and conveniently utilises it to form relevant user attributes. It also uses prompts, like “You have this preference because we think it may be relevant to you based on what you do on Facebook” which perceives the user into believing that these preferences help them get a better online experience. This aspect is important because from the privacy viewpoint, there can be sensitive ad preferences that the social network uses in its advertising model, which could be a privacy risk. The authors of the paper combine NLP with manual classification to obtain a list of likely sensitive ad preferences from a list of ad preferences obtained from the FB Ads Manager. They then use the FB Ads Manager to quantify how many users have been assigned potentially sensitive ad preferences. Their study then pointed out that in the region for which the study was conducted, EU, FB users were mostly assigned advertisements on the website based on sensitive ad preferences. Users were targeted based on their religious beliefs and political stance, which potentially lead to identity theft and biased user experience platforms. 
+
+\section{User Perceptions, Challenges and Future Scope}
+
+
+It is important that users are made well-aware of the methodologies of extracting their personal information for the benefit of targeted advertising. Explicit demographic targeting results in the involvement of bias and discrimination based on user identities \cite{userperception}, and businesses profit off of this heavily in the open model of the internet. Amidst it all, much needed research in privacy-preserving targeted advertising stems from poorly understood business advertising models and the involvement of intermediaries in the same. Users’ reaction to behavioral advertising, while some found beneficial for a greater online experience, had them concerned about data collection and question the value of transparency. Users need not only understand how their data is filtered and processed, but also of the privacy consequences of engaging with the open web without security measures to protect themselves from tracking, like using the VPN, or using ad-blockers for certain highly engaging websites. Ad settings provided by most websites are found to be not entirely transparent and can trick the user into believing that they are aware of where their data is going \cite{automatedexp}. Policies for data collection framed by governing and regulatory bodies themselves have been proven to have unethical consequences \cite{liao2020privacy}. In a scenario of obtaining desirable ads, a study found that  43\% of respondents rated our discriminatory advertising scenarios a significant or moderate problem \cite{userperception}. This indicates that there is a staunch need for advertisers and publishers to employ privacy-preserving measures in their filtering systems and system models in order to improve trust and also support regulation.
+
+For future work, it would make sense to move beyond working on privacy-preservation for potentially desirable advertisements. Undesirable ads have the potential to have consequences that could be more harmful to users’ personal information. It would also be beneficial for researchers to make use of user reactions and feedback while devising privacy-preserving models which could potentially help point out to the concerns at the root of user perceptions of the classifications discussed in this paper to solve relevant problems.
+
+\section{Conclusion}
+
+Advertising on the internet must primarily be viewed from a point of user-sensitivity. When advertising networks create user profiles based on their online activities, a lot goes into stake. Privacy-preserving models are becoming increasingly mathematically coherent, but building such models in reality would involve hard-to-implement social and ethical parameters. All the discussed forms of targeting, at the end of the day, do have scope for malicious intent to still be used. It is to be noted that the surveyed models assume a basic form of honesty, upon which privacy mechanisms can be built.  It is observed that those models that used encryption are mathematically proven to be a safer bet against users being tracked by unwanted information sniffers. Almost every other form of privacy-preservation in online advertising platforms is breakable at some level, if not appropriately regulated.
+
+
+
+
+%
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+%\begin{acks}
+%To Robert, for the bagels and explaining CMYK and color spaces.
+%\end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+
+%%
+%% If your work has an appendix, this is the place to put it.
+\appendix
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-sigplan.tex'.
